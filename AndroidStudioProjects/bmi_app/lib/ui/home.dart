@@ -27,6 +27,15 @@ class ScaffoldExample extends StatelessWidget {
         onPressed: null,
         backgroundColor: Colors.cyan,
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("Home")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.history), title: Text("Previous")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.notification_important), title: Text("Alarms")),
+        ],
+      ),
     );
   }
 }
